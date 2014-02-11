@@ -19,12 +19,12 @@
 <!-- ========================================================================= -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.thymeleaf</groupId>
   <artifactId>thymeleaf-spring3</artifactId>
   <packaging>jar</packaging>
-  <version>2.1.2.RELEASE</version>
+  <version>2.1.2-cht-1</version>
   <name>thymeleaf-spring3</name>
   <url>http://www.thymeleaf.org</url>
 
@@ -42,7 +42,7 @@
     <name>The THYMELEAF team</name>
     <url>http://www.thymeleaf.org</url>
   </organization>
-  
+
   <scm>
     <url>scm:git:git@github.com:thymeleaf/thymeleaf-spring3.git</url>
     <connection>scm:git:git@github.com:thymeleaf/thymeleaf-spring3.git</connection>
@@ -76,7 +76,7 @@
       </roles>
     </developer>
   </developers>
-  
+
   <distributionManagement>
     <snapshotRepository>
       <id>sonatype-nexus-snapshots</id>
@@ -101,22 +101,22 @@
     </repository>
   </repositories>
 
-  
+
   <properties>
     <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
     <springframework.version>3.1.0.RELEASE</springframework.version>
     <springwebflow.version>2.3.1.RELEASE</springwebflow.version>
   </properties>
 
-  
+
   <build>
-  
+
     <resources>
-    
+
       <resource>
         <directory>src/main/resources</directory>
       </resource>
-    
+
       <resource>
           <directory>.</directory>
           <targetPath>META-INF</targetPath>
@@ -125,17 +125,17 @@
               <include>NOTICE.txt</include>
           </includes>
       </resource>
-      
+
     </resources>
-    
+
     <testResources>
       <testResource>
         <directory>src/test/resources</directory>
       </testResource>
     </testResources>
-    
+
     <plugins>
-    
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -145,7 +145,7 @@
           <target>1.5</target>
         </configuration>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
@@ -154,7 +154,7 @@
           <encoding>US-ASCII</encoding>
         </configuration>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
@@ -175,7 +175,7 @@
           </execution>
         </executions>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
@@ -189,7 +189,7 @@
           </execution>
         </executions>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
@@ -204,7 +204,7 @@
           </execution>
         </executions>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
@@ -213,21 +213,21 @@
 
 
     </plugins>
-    
+
   </build>
 
 
 
 
   <dependencies>
-    
+
     <dependency>
       <groupId>org.thymeleaf</groupId>
       <artifactId>thymeleaf</artifactId>
-      <version>2.1.2.RELEASE</version>
+      <version>2.1.2-cht-1</version>
       <scope>compile</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
@@ -235,7 +235,7 @@
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
-    
+
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
@@ -243,7 +243,7 @@
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
-    
+
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
@@ -251,7 +251,7 @@
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
-        
+
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
@@ -259,7 +259,7 @@
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
-        
+
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-expression</artifactId>
@@ -267,7 +267,7 @@
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
-    
+
     <dependency>
       <groupId>org.springframework.webflow</groupId>
       <artifactId>spring-webflow</artifactId>
@@ -275,7 +275,7 @@
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
-  
+
     <dependency>
       <groupId>org.springframework.webflow</groupId>
       <artifactId>spring-js</artifactId>
@@ -283,23 +283,23 @@
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
-    
+
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.6.1</version>
       <scope>compile</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.8.2</version>
       <scope>test</scope>
     </dependency>
-    
-    
+
+
   </dependencies>
 
-  
+
 </project>
